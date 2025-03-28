@@ -499,6 +499,15 @@ body {
     transform: translateX(5px);
 }
 
+.contact-form .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(96, 165, 250, 0.4);
+}
+
+.contact-form .btn:hover i {
+    transform: translateX(5px);
+}
+
 @media (max-width: 768px) {
     .contact-content {
         grid-template-columns: 1fr;
@@ -538,13 +547,17 @@ footer {
         display: block;
     }
 
+    .nav-logo {
+        font-size: 1.2rem;
+        white-space: nowrap;
+    }
+
     .contact-content {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 
     .video-background video {
-        height: 100%;
-        width: auto;
+        object-fit: cover;
     }
 
     .glow-text {
@@ -552,12 +565,24 @@ footer {
     }
 
     .profile-img {
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        height: 250px;
+        margin: 2rem auto;
     }
 
     .section-title {
         font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .nav-logo {
+        font-size: 1.1rem;
+    }
+
+    .profile-img {
+        width: 400px;
+        height: 400px;
     }
 }
 
